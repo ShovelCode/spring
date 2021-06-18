@@ -1,10 +1,12 @@
-import org.springframework.stereotype.Controller
-    org.springframework.web.bind.annotation.RequestMapping
+package com.example.basic;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-    public class HomeController {
+public class HomeController {
     @RequestMapping("/")
-        public String homePage(){
+    public String homePage(){
         return "index";
     }
 }
